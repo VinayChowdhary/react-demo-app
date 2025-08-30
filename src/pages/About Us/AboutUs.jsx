@@ -1,50 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
+import NavBar from "../../components/NavBar/NavBar";
+import Hero from "../../components/Hero/Hero";
+import BioSection from "../../components/BioSection/BioSection";
+import ContactSection from "../../components/ContactSection/ContactSection";
 
-export default class AboutUs extends Component {
-  constructor() {
-    super();
-    console.log("Constructor");
-    this.state = {
-      viewType: "LIST",
-      name: "",
-      age: 0,
-    };
-  }
+const AboutUs = () => {
+  return (
+    <main>
+      <NavBar />
+      <Hero />
+      <BioSection />
+      <ContactSection />
+    </main>
+  );
+};
 
-  render() {
-    console.log("Render");
-    return (
-      <div>
-        <h1>Class based component</h1>
-        <button
-          onClick={() => {
-            this.setState({
-              viewType: this.state.viewType === "LIST" ? "TILE" : "LIST",
-            });
-          }}
-        >
-          Click here to update the view Type
-        </button>
-        <p>{this.state.viewType}</p>
-      </div>
-    );
-  }
-
-  componentDidMount() {
-    console.log("Component mounted");
-    //used to write async logics/calls (API Calls)
-  }
-  componentDidUpdate() {
-    console.log("Component updated");
-    //comparison of props and state
-  }
-  componentWillUnmount() {
-    console.log("component unmounted");
-    //cleanup logic
-  }
-  // shouldComponentUpdate() {
-  //   console.log("should component update");
-  //   //decide whether to re render the component or not
-  //   return true;
-  // }
-}
+export default AboutUs;

@@ -1,0 +1,82 @@
+#design-cards {
+  height: 688px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 180px 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#design-cards :hover {
+  transform: translateY(-5px);
+  transition: ease-out;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.design-cards-div {
+  height: 328px;
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 125px;
+  margin: 0 auto;
+}
+
+.figure-section {
+  width: 249.9px;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.figure-section > figcaption {
+  width: inherit;
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.figure-section > figcaption > h3 {
+  width: inherit;
+  height: 42px;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 42px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.figure-section > figcaption > p {
+  width: inherit;
+  height: 81px;
+  font-weight: 400;
+  line-height: 27px;
+  font-size: 17px;
+  letter-spacing: 0px;
+}
+@media screen and (max-width: 476px) {
+  #design-cards {
+    height: auto;
+    padding: 150px 62px;
+  }
+  .design-cards-div {
+    margin: 0 auto;
+    height: 1234px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 56px;
+  }
+  .figure-section {
+    width: 249.9px;
+    height: 328px;
+  }
+} /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,37 @@
+#logo-bar {
+  height: 166.83px;
+  width: 100%;
+  padding: 0px 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.logo-bar-div1 {
+  width: 100%;
+  max-width: 1080px;
+  height: inherit;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0px;
+  gap: 60px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 476px) {
+  #logo-bar {
+    height: auto;
+    padding: 0px 66px;
+  }
+  .logo-bar-div1 {
+    padding: 60px 0px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+} /*# sourceMappingURL=index.css.map */
