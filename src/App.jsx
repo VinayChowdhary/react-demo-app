@@ -8,18 +8,20 @@ import Enquiry from "./pages/Enquiry/Enquiry";
 import EnquiryUncontrolled from "./pages/Enquiry/EnquiryUncontrolled";
 import EnquiryControlled from "./pages/Enquiry/EnquiryControlled";
 import EnquiryControlledOptimized from "./pages/Enquiry/EnquiryControlledOptimized";
+import { Blogs2 } from "./pages/Blogs/Blogs2";
 
 const App = () => {
   return (
     <div>
       <Header />
       {/* <Blogs /> */}
+      <Blogs2 />
       {/* <ArraysMaps1607 /> */}
       {/* <AboutUs /> */}
       {/* <Enquiry />
       <EnquiryUncontrolled /> */}
       {/* <EnquiryControlled /> */}
-      <EnquiryControlledOptimized />
+      {/* <EnquiryControlledOptimized /> */}
       <Footer />
     </div>
   );
